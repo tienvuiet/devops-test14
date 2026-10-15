@@ -20,7 +20,7 @@ public class LabController {
         this.repository = repository;
     }
 
-    /** GET /api/labs - danh sách phòng lab */
+    /** GET /api/labs - ds phòng lab */
     @GetMapping("/labs")
     public List<Lab> findAll() {
         return repository.findAll(Sort.by("id"));
