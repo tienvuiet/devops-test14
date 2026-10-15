@@ -52,6 +52,11 @@ services:
       DB_NAME: ${MYSQL_DATABASE}
       DB_USER: ${MYSQL_USER}
       DB_PASSWORD: ${MYSQL_PASSWORD}
+      STUDENT_NAME: ${STUDENT_NAME}
+      STUDENT_ID: ${STUDENT_ID}
+      STUDENT_CLASS: ${STUDENT_CLASS}
+      STUDENT_EMAIL: ${STUDENT_EMAIL}
+      GITHUB_USERNAME: ${GITHUB_USERNAME}
       TZ: Asia/Ho_Chi_Minh
     # Chỉ khởi động app khi service mysql đã ở trạng thái healthy (CÓ SẴN)
     depends_on:
